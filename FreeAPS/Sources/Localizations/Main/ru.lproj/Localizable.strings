@@ -16,6 +16,15 @@
 /* Continue after added carbs without bolus */
 "Continue without bolus" = "Продолжить без болюса";
 
+/* History View */
+"No data." = "No data.";
+
+/* Bolus View */
+"No Predictions. Failed loop suggestion." = "No Predictions. Failed loop suggestion.";
+
+/* Bolus View */
+"Missing Glucose" = "Missing Glucose";
+
 /* Continue after added meal without bolus */
 "Save Meal without bolus" = "Сохранить прием пищи без болюса";
 
@@ -189,6 +198,9 @@
 
 /*  */
 "Cancel Temp Target" = "Отменить временную цель";
+
+/*  */
+"Cancel Temporary Target" = "Отменить временную цель";
 
 /* Custom temp target */
 "Custom" = "Своя";
@@ -460,6 +472,9 @@ Enact a temp Basal or a temp target */
 
 /* Add Omnipod pump */
 "Add Omnipod" = "Добавить Omnipod";
+
+/* Add Dana-i/RS pump */
+"Add Dana-i/RS" = "Добавить Dana-i/RS";
 
 /* Add Simulator pump */
 "Add Simulator" = "Добавить Cимулятор";
@@ -997,7 +1012,7 @@ Enact a temp Basal or a temp target */
 "Delete CGM" = "Удалить CGM";
 
 /* */
-"Are you sure you want to remove this cgm from loop?" = "Вы уверены, что хотите удалить этот CGM?";
+"Are you sure you want to remove this cgm from iAPS?" = "Вы уверены, что хотите удалить этот CGM из iAPS?";
 
 /* */
 "There is no undo" = "Это нельзя отменить!";
@@ -1184,6 +1199,12 @@ Enact a temp Basal or a temp target */
 "No Glucose Alarm active" = "Тревога неактивна";
 
 /* */
+"Ascending Glucose Alarm active" = "Сигнал высокого сахара активен";
+
+/* */
+"Descending Glucose Alarm active" = "Сигнал низкого сахара активен";
+
+/* */
 "snoozing until %@" = "отложена до %@";
 
 /* */
@@ -1223,7 +1244,7 @@ Enact a temp Basal or a temp target */
 "Backfill options" = "Опции заполнения";
 
 /* */
-"Backfilling from trend is currently not well supported by Loop" = "Заполнение из тренда в настоящее время не поддерживается в Loop";
+"Backfilling from trend is currently not well supported by iAPS" = "Обратное заполнение данных на основе трендов в настоящее время не полностью поддерживается iAPS";
 
 /* */
 "Backfill from history" = "Заполнять из истории";
@@ -1273,6 +1294,9 @@ Enact a temp Basal or a temp target */
 /* Option for no sound */
 "Silent" = "Без звука";
 
+/* Option for default notification sound */
+"Default" = "По умолчанию";
+
 /* The iOS default sound */
 "iOS default sound" = "Звук iOS по умолчанию";
 
@@ -1289,13 +1313,13 @@ Enact a temp Basal or a temp target */
 "Missing Loops" = "Пропущенные циклы";
 
 /* Alert for ascending glucose */
-"Ascending" = "Ascending";
+"Ascending" = "Восходящий";
 
 /* Alert for descending glucose */
-"Descending" = "Descending";
+"Descending" = "Нисходящий";
 
 /* Thresholds for Alerts */
-"Thresholds" = "Thresholds";
+"Thresholds" = "Пороги";
 
 /* */
 "Carbs required: %d g" = "Необходимы углеводы: %d г";
@@ -1750,6 +1774,9 @@ Enact a temp Basal or a temp target */
 "Eventual Glucose" = "Возможная глюкоза";
 
 /* */
+"Minimum Predicted Glucose" = "Минимальная прогнозируемая глюкоза";
+
+/* */
 "Please wait" = "Подождите";
 
 /* */
@@ -1886,7 +1913,7 @@ Enact a temp Basal or a temp target */
 "%1$@ for %2$@" = "%1$@ на %2$@";
 
 /* Description text on manual temp basal action sheet */
-"Loop will not automatically adjust your insulin delivery until the temporary basal rate finishes or is canceled." = "Петля не будет автоматически изменять подачу инсулина, пока Временная Базальная Скорость не завершится, либо не будет отменена пользователем.";
+"iAPS will not automatically adjust your insulin delivery until the temporary basal rate finishes or is canceled." = "iAPS не будет автоматически корректировать подачу инсулина, пока не завершится временная базальная скорость или она не будет отменена.";
 /* Button text for setting manual temporary basal rate*/
 "Set Temporary Basal" = "Установить Временный Базал";
 
@@ -1997,10 +2024,16 @@ Enact a temp Basal or a temp target */
 "2 hours" = "2 часа";
 
 /* */
+"3 hours" = "3 hours";
+
+/* */
 "4 hours" = "4 часа";
 
 /* */
 "6 hours" = "6 часов";
+
+/* */
+"9 hours" = "9 hours";
 
 /* */
 "12 hours" = "12 часов";
@@ -2165,7 +2198,7 @@ Enact a temp Basal or a temp target */
 "Share and Backup" = "Общий доступ и резервирование";
 
 /* Section 1 title */
-"Upload settings and statistics" = "Выгружать настройки и статистику";
+"Upload Settings and Statistics" = "Выгружать настройки и статистику";
 
 /* On-off toggle */
 "Share and Backup all of your Settings and Statistics" = "Делиться и резервно копировать все настройки и статистику";
@@ -2531,7 +2564,7 @@ Enact a temp Basal or a temp target */
 /* */
 "SMB Delivery Ratio BG Range" = "Диапазон уровня глюкозы в крови для SMB";
 
-/* */
+/* SMB Delivery Ratio BG Range description */
 "Default value: 0, Sensible is between 40 mg/dL and 120 mg/dL. The linearly increasing SMB delivery ratio is mapped to the glucose range [target_bg, target_bg+bg_range]. At target_bg the SMB ratio is smb_delivery_ratio_min, at target_bg+bg_range it is smb_delivery_ratio_max. With 0 the linearly increasing SMB ratio is disabled and the fix smb_delivery_ratio is used." = "Значение по умолчанию: 0. Разумная настройка — от 2 до 6 ммоль/л. (40-120 мг/дл) Линейно увеличивающееся соотношение подачи SMB зависит от настройки диапазона уровня глюкозы в крови и минимальной/максимальной настройки вашего коэффициента SMB. При значении 0 - используется стандартное соотношение подачи SMB.";
 
 /* */
@@ -2582,7 +2615,7 @@ Enact a temp Basal or a temp target */
 /* */
 "Max IOB Threshold Percent" = "Максимальный IOB порог";
 
-/* Description */
+/* IOB Threshold Percent Description */
 "Percentage of the max IOB setting to use for SMBs while Auto ISF is enabled.\n\nWhile current IOB is below the threshold, the SMB amount can exceed the threshold by 30%, however never the max IOB setting.\n\nAt 100% this setting is disabled." = "Процент от максимального уровня IOB, используемый для SMB при включенном Auto ISF.\n\nПока текущий уровень IOB ниже установленного порога, количество SMB может превышать порог на 30%, но никогда не превысит максимальный уровень IOB.\n\nПри значении 100% эта настройка отключается.";
 
 /* */
@@ -2957,6 +2990,9 @@ Enact a temp Basal or a temp target */
 
 /* Settings Section */
 "Extra Features" = "Дополнительные функции";
+
+/* Header */
+"UI/UX Settings" = "UI/UX Settings";
 
 /* UI/UX option */
 "Display Predictions" = "Отображать прогнозы";

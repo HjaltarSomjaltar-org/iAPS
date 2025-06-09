@@ -363,7 +363,7 @@ struct MainChartView: View {
                 path.addLine(to: CGPoint(x: x, y: fullSize.height - 20))
             }
             .stroke(
-                colorScheme == .dark ? Color.white : Color.black,
+                colorScheme == .dark ? IAPSconfig.chartBackgroundLight : IAPSconfig.chartBackgroundDark,
                 style: StrokeStyle(lineWidth: 0.5, dash: [5])
             )
         }
@@ -489,7 +489,7 @@ struct MainChartView: View {
                 path.addEllipse(in: rect)
             }
         }
-        .fill(Color.red)
+        .fill(Color.pink)
 
         .onChange(of: data.isManual) {
             update(fullSize: fullSize)

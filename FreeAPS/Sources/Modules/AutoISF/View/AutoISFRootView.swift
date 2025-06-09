@@ -65,7 +65,7 @@ extension AutoISF {
                                 }
                         }.disabled(isPresented)
                     }
-                } header: { Text("Experimental").foregroundStyle(.red) }
+                } header: { Text("Experimental").foregroundStyle(.pink) }
 
                 if state.autoisf {
                     Section {
@@ -533,7 +533,7 @@ extension AutoISF {
             }
 
             .padding(.all, 20)
-            .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
+            .foregroundStyle(colorScheme == .dark ? IAPSconfig.previewBackgroundLight : IAPSconfig.previewBackgroundDark)
             .background(
                 RoundedRectangle(cornerRadius: 8, style: .continuous)
                     .fill(colorScheme == .dark ? Color(.black).opacity(0.3) : Color(.white))

@@ -16,6 +16,15 @@
 /* Continue after added carbs without bolus */
 "Continue without bolus" = "Fortsätt utan bolus";
 
+/* History View */
+"No data." = "Ingen data.";
+
+/* Bolus View */
+"No Predictions. Failed loop suggestion." = "Inga blodsockerprognoser. Misslyckad loop.";
+
+/* Bolus View */
+"Missing Glucose" = "Blodsocker saknas";
+
 /* Continue after added meal without bolus */
 "Save Meal without bolus" = "Spara måltid utan bolus";
 
@@ -189,6 +198,9 @@
 
 /*  */
 "Cancel Temp Target" = "Avbryt tillfälligt målvärde";
+
+/*  */
+"Cancel Temporary Target" = "Avbryt tillfälligt målvärde";
 
 /* Custom temp target */
 "Custom" = "Anpassad";
@@ -460,6 +472,9 @@ Enact a temp Basal or a temp target */
 
 /* Add Omnipod pump */
 "Add Omnipod" = "Lägg till Omnipod";
+
+/* Add Dana-i/RS pump */
+"Add Dana-i/RS" = "Lägg till Dana-i/RS";
 
 /* Add Simulator pump */
 "Add Simulator" = "Lägg till simulator";
@@ -997,7 +1012,7 @@ Enact a temp Basal or a temp target */
 "Delete CGM" = "Radera CGM";
 
 /* */
-"Are you sure you want to remove this cgm from loop?" = "Är du säker på att du vill ta bort denna CGM från iAPS?";
+"Are you sure you want to remove this cgm from iAPS?" = "Är du säker på att du vill ta bort denna CGM från iAPS?";
 
 /* */
 "There is no undo" = "Det går inte att ångra!";
@@ -1184,6 +1199,12 @@ Enact a temp Basal or a temp target */
 "No Glucose Alarm active" = "Inget blodsockerlarm aktivt";
 
 /* */
+"Ascending Glucose Alarm active" = "Stigande blodsockerlarm aktivt";
+
+/* */
+"Descending Glucose Alarm active" = "Fallande blodsockerlarm aktivt";
+
+/* */
 "snoozing until %@" = "snoozar till %@";
 
 /* */
@@ -1223,7 +1244,7 @@ Enact a temp Basal or a temp target */
 "Backfill options" = "Alternativ för återfyllnad";
 
 /* */
-"Backfilling from trend is currently not well supported by Loop" = "Återfyllning från trend stöds för närvarande inte bra av Loop";
+"Backfilling from trend is currently not well supported by iAPS" = "Återfyllning från trend stöds för närvarande inte bra av iAPS";
 
 /* */
 "Backfill from history" = "Återfyll från historik";
@@ -1272,6 +1293,9 @@ Enact a temp Basal or a temp target */
 
 /* Option for no sound */
 "Silent" = "Tyst";
+
+/* Option for default notification sound */
+"Default" = "Standard";
 
 /* The iOS default sound */
 "iOS default sound" = "iOS standardljud";
@@ -1750,6 +1774,9 @@ Enact a temp Basal or a temp target */
 "Eventual Glucose" = "Blodsockerprognos";
 
 /* */
+"Minimum Predicted Glucose" = "Lägsta beräknade blodsocker";
+
+/* */
 "Please wait" = "Vänta...";
 
 /* */
@@ -1886,7 +1913,7 @@ Enact a temp Basal or a temp target */
 "%1$@ for %2$@" = "%1$@ i %2$@";
 
 /* Description text on manual temp basal action sheet */
-"Loop will not automatically adjust your insulin delivery until the temporary basal rate finishes or is canceled." = "iAPS kommer inte automatiskt att justera dina insulindoser förrän den temporära basalen är färdig eller har avbrytits.";
+"iAPS will not automatically adjust your insulin delivery until the temporary basal rate finishes or is canceled." = "iAPS kommer inte automatiskt att justera dina insulindoser förrän den temporära basalen är färdig eller har avbrytits.";
 /* Button text for setting manual temporary basal rate*/
 "Set Temporary Basal" = "Ställ in temporaär basal";
 
@@ -1997,10 +2024,16 @@ Enact a temp Basal or a temp target */
 "2 hours" = "2 timmar";
 
 /* */
+"3 hours" = "3 timmar";
+
+/* */
 "4 hours" = "4 timmar";
 
 /* */
 "6 hours" = "6 timmar";
+
+/* */
+"9 hours" = "9 timmar";
 
 /* */
 "12 hours" = "12 timmar";
@@ -2165,7 +2198,7 @@ Enact a temp Basal or a temp target */
 "Share and Backup" = "Dela och säkerhetskopiera";
 
 /* Section 1 title */
-"Upload settings and statistics" = "Ladda upp inställningar och statistik";
+"Upload Settings and Statistics" = "Ladda upp inställningar och statistik";
 
 /* On-off toggle */
 "Share and Backup all of your Settings and Statistics" = "Dela och säkerhetskopiera alla dina inställningar och statistik";
@@ -2531,7 +2564,7 @@ Enact a temp Basal or a temp target */
 /* */
 "SMB Delivery Ratio BG Range" = "Blodsockerintervall för SMB-kvot";
 
-/* */
+/* SMB Delivery Ratio BG Range description */
 "Default value: 0, Sensible is between 40 mg/dL and 120 mg/dL. The linearly increasing SMB delivery ratio is mapped to the glucose range [target_bg, target_bg+bg_range]. At target_bg the SMB ratio is smb_delivery_ratio_min, at target_bg+bg_range it is smb_delivery_ratio_max. With 0 the linearly increasing SMB ratio is disabled and the fix smb_delivery_ratio is used." = "Standardvärde: 0. Rimlig inställning är mellan 2 och 6 mmol/l. Den linjärt ökande SMB-kvoten beror på blodsockerintervallinställningen och min/max-inställning för din SMB-kvot.";
 
 /* */
@@ -2582,7 +2615,7 @@ Enact a temp Basal or a temp target */
 /* */
 "Max IOB Threshold Percent" = "Procent av Max IOB som tröskelvärde för SMB";
 
-/* Description */
+/* IOB Threshold Percent Description */
 "Percentage of the max IOB setting to use for SMBs while Auto ISF is enabled.\n\nWhile current IOB is below the threshold, the SMB amount can exceed the threshold by 30%, however never the max IOB setting.\n\nAt 100% this setting is disabled." = "Begränsa dina SMB (automatiska bolusar) med en procent av fin inställning för maximalt tillåten mängd aktivt insulin (Max IOB). Kommer endast att användas medan Auto ISF är aktivt.\n\nMedan nuvarande aktivt insulin (IOB) ligger under tröskelvärdet, kan SMB-beloppet överskrida detta tröskelvärde med 30%, men kan aldrig överskrida din inställning för maximalt tillåteb mängd aktivt insulin.\n\nPå 100% kommer denna inställning ar inaktiveras.";
 
 /* */
@@ -2957,6 +2990,9 @@ Enact a temp Basal or a temp target */
 
 /* Settings Section */
 "Extra Features" = "Extra";
+
+/* Header */
+"UI/UX Settings" = "UI/UX-inställningar";
 
 /* UI/UX option */
 "Display Predictions" = "Visa prognoser";

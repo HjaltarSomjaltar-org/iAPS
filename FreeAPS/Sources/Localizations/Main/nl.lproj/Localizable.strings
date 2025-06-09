@@ -16,6 +16,15 @@
 /* Continue after added carbs without bolus */
 "Continue without bolus" = "Verdergaan zonder bolus";
 
+/* History View */
+"No data." = "No data.";
+
+/* Bolus View */
+"No Predictions. Failed loop suggestion." = "No Predictions. Failed loop suggestion.";
+
+/* Bolus View */
+"Missing Glucose" = "Missing Glucose";
+
 /* Continue after added meal without bolus */
 "Save Meal without bolus" = "Maaltijd opslaan zonder bolus";
 
@@ -189,6 +198,9 @@
 
 /*  */
 "Cancel Temp Target" = "Annuleer tijdelijk doel";
+
+/*  */
+"Cancel Temporary Target" = "Annuleer tijdelijk doel";
 
 /* Custom temp target */
 "Custom" = "Aangepast";
@@ -460,6 +472,9 @@ Enact a temp Basal or a temp target */
 
 /* Add Omnipod pump */
 "Add Omnipod" = "Omnipod Eros toevoegen";
+
+/* Add Dana-i/RS pump */
+"Add Dana-i/RS" = "Voeg Dana-i/RS toe";
 
 /* Add Simulator pump */
 "Add Simulator" = "Simulator toevoegen";
@@ -998,7 +1013,7 @@ Je kunt maar één app tegelijk gebruiken die via bluetooth met de sensor commun
 "Delete CGM" = "Verwijder CGM";
 
 /* */
-"Are you sure you want to remove this cgm from loop?" = "Weet je zeker dat je deze CGM uit de lijst wilt verwijderen?";
+"Are you sure you want to remove this cgm from iAPS?" = "Weet je zeker dat je deze CGM uit de lijst wilt verwijderen?";
 
 /* */
 "There is no undo" = "Ongedaan maken is niet mogelijk";
@@ -1185,6 +1200,12 @@ Je kunt maar één app tegelijk gebruiken die via bluetooth met de sensor commun
 "No Glucose Alarm active" = "Geen glucose alarm actief";
 
 /* */
+"Ascending Glucose Alarm active" = "Stijgende glucose-alarm actief";
+
+/* */
+"Descending Glucose Alarm active" = "Dalende glucose-alarm actief";
+
+/* */
 "snoozing until %@" = "sluimeren tot %@";
 
 /* */
@@ -1224,7 +1245,7 @@ Je kunt maar één app tegelijk gebruiken die via bluetooth met de sensor commun
 "Backfill options" = "Terugzet opties";
 
 /* */
-"Backfilling from trend is currently not well supported by Loop" = "Terugzetten van trend wordt momenteel niet goed ondersteund door Loop";
+"Backfilling from trend is currently not well supported by iAPS" = "Achteraf aanvullen op basis van trendgegevens wordt momenteel niet goed ondersteund door iAPS";
 
 /* */
 "Backfill from history" = "Terugzetten van geschiedenis";
@@ -1274,6 +1295,9 @@ Je kunt maar één app tegelijk gebruiken die via bluetooth met de sensor commun
 /* Option for no sound */
 "Silent" = "Stille modus";
 
+/* Option for default notification sound */
+"Default" = "Standaard";
+
 /* The iOS default sound */
 "iOS default sound" = "Standaard iOS geluid";
 
@@ -1290,13 +1314,13 @@ Je kunt maar één app tegelijk gebruiken die via bluetooth met de sensor commun
 "Missing Loops" = "Ontbrekende loops";
 
 /* Alert for ascending glucose */
-"Ascending" = "Ascending";
+"Ascending" = "Oplopend";
 
 /* Alert for descending glucose */
-"Descending" = "Descending";
+"Descending" = "Dalend";
 
 /* Thresholds for Alerts */
-"Thresholds" = "Thresholds";
+"Thresholds" = "Grenswaarden";
 
 /* */
 "Carbs required: %d g" = "Koolhydraten vereist: %d g";
@@ -1751,6 +1775,9 @@ Je kunt maar één app tegelijk gebruiken die via bluetooth met de sensor commun
 "Eventual Glucose" = "Voorspelde glucose";
 
 /* */
+"Minimum Predicted Glucose" = "Minimale voorspelde glucose is";
+
+/* */
 "Please wait" = "Even geduld";
 
 /* */
@@ -1887,7 +1914,7 @@ Je kunt maar één app tegelijk gebruiken die via bluetooth met de sensor commun
 "%1$@ for %2$@" = "%1$@ voor %2$@";
 
 /* Description text on manual temp basal action sheet */
-"Loop will not automatically adjust your insulin delivery until the temporary basal rate finishes or is canceled." = "iAPS zal niet automatisch veranderingen aanbrengen in de hoeveelheid insuline die je krijgt, totdat de tijdelijke basaalstand is gestopt of geannuleerd.";
+"iAPS will not automatically adjust your insulin delivery until the temporary basal rate finishes or is canceled." = "iAPS past je insulineafgifte niet automatisch aan zolang de tijdelijke basaalstand nog actief is of niet is geannuleerd.";
 /* Button text for setting manual temporary basal rate*/
 "Set Temporary Basal" = "Tijdelijke basaal instellen";
 
@@ -1998,10 +2025,16 @@ Je kunt maar één app tegelijk gebruiken die via bluetooth met de sensor commun
 "2 hours" = "2 uur";
 
 /* */
+"3 hours" = "3 uur";
+
+/* */
 "4 hours" = "4 uur";
 
 /* */
 "6 hours" = "6 uur";
+
+/* */
+"9 hours" = "9 uur";
 
 /* */
 "12 hours" = "12 uur";
@@ -2166,7 +2199,7 @@ Je kunt maar één app tegelijk gebruiken die via bluetooth met de sensor commun
 "Share and Backup" = "Delen en back-up";
 
 /* Section 1 title */
-"Upload settings and statistics" = "Upload instellingen en statistieken";
+"Upload Settings and Statistics" = "Upload instellingen en statistieken";
 
 /* On-off toggle */
 "Share and Backup all of your Settings and Statistics" = "Deel en back-up al uw instellingen en statistieken";
@@ -2532,7 +2565,7 @@ Je kunt maar één app tegelijk gebruiken die via bluetooth met de sensor commun
 /* */
 "SMB Delivery Ratio BG Range" = "SMB-afgifteverhouding voor bloedsuikerbereik";
 
-/* */
+/* SMB Delivery Ratio BG Range description */
 "Default value: 0, Sensible is between 40 mg/dL and 120 mg/dL. The linearly increasing SMB delivery ratio is mapped to the glucose range [target_bg, target_bg+bg_range]. At target_bg the SMB ratio is smb_delivery_ratio_min, at target_bg+bg_range it is smb_delivery_ratio_max. With 0 the linearly increasing SMB ratio is disabled and the fix smb_delivery_ratio is used." = "De standaardwaarde is 0, maar een logisch bereik ligt tussen 2,2 mmol/L en 6,7 mmol/L (40-120 mg/dL). De afgifte van SMB's (Smart Micro Boluses) neemt geleidelijk toe naarmate de bloedsuikerspiegel stijgt. Bij de doelwaarde is de SMB-verhouding minimaal, en bij doelwaarde + bg_range is deze maximaal. Als de waarde 0 is, blijft de SMB-verhouding vast en wordt de geleidelijke stijging uitgeschakeld.";
 
 /* */
@@ -2583,7 +2616,7 @@ Je kunt maar één app tegelijk gebruiken die via bluetooth met de sensor commun
 /* */
 "Max IOB Threshold Percent" = "Max IOB drempelwaarde percentage";
 
-/* Description */
+/* IOB Threshold Percent Description */
 "Percentage of the max IOB setting to use for SMBs while Auto ISF is enabled.\n\nWhile current IOB is below the threshold, the SMB amount can exceed the threshold by 30%, however never the max IOB setting.\n\nAt 100% this setting is disabled." = "Percentage van de maximale IOB-instelling voor SMB’s (Super Micro Bolussen) bij ingeschakelde automatische ISF (insulinegevoeligheid).\n\nZolang de huidige IOB (insuline die nog actief is) onder een bepaalde grens blijft, mag een SMB deze grens met 30% overschrijden — maar nooit meer dan het ingestelde maximum voor IOB.\n\nBij een instelling van 100% is deze beperking uitgeschakeld, dus dan wordt de hele IOB-limiet gebruikt.";
 
 /* */
@@ -2963,6 +2996,9 @@ Eenvoudig gezegd, de Dynamische Carb Ratio past de koolhydraatverhouding aan op 
 /* Settings Section */
 "Extra Features" = "Extra functionaliteiten";
 
+/* Header */
+"UI/UX Settings" = "UI/UX instellingen";
+
 /* UI/UX option */
 "Display Predictions" = "Geef voorspellingen weer";
 
@@ -3038,7 +3074,7 @@ Eenvoudig gezegd, de Dynamische Carb Ratio past de koolhydraatverhouding aan op 
 "Display carb equivalents" = "Toon koolhydraathoeveelheden";
 
 /* UI/UX option */
-"Display carb equivalent amount" = "Toon hoeveelheid koolhydraten";
+"Display carb equivalent amount" = "Toon hoeveelheid koolhydraten in gram";
 
 /* UI/UX option */
 "Display Sensor Time Remaining" = "Resterende sensortijd weergeven";

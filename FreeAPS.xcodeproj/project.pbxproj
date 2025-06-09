@@ -79,6 +79,7 @@
 		19A910382A24EF3200C8951B /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A910372A24EF3200C8951B /* ChartsView.swift */; };
 		19AEF4322B1F5A98006FFE8B /* TIRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF4312B1F5A98006FFE8B /* TIRView.swift */; };
 		19B0EF2128F6D66200069496 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0EF2028F6D66200069496 /* Statistics.swift */; };
+		19CE0E592DD9F30D0050FC89 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE0E582DD9F3060050FC89 /* Configuration.swift */; };
 		19D466A329AA2B80004D5F33 /* FPUConfigDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D466A229AA2B80004D5F33 /* FPUConfigDataFlow.swift */; };
 		19D466A529AA2BD4004D5F33 /* FPUConfigProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D466A429AA2BD4004D5F33 /* FPUConfigProvider.swift */; };
 		19D466A729AA2C22004D5F33 /* FPUConfigStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D466A629AA2C22004D5F33 /* FPUConfigStateModel.swift */; };
@@ -102,7 +103,6 @@
 		19F191E02BE4F98F00F6297E /* SharingStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F191DF2BE4F98F00F6297E /* SharingStateModel.swift */; };
 		19F191E22BE4F9BA00F6297E /* SharingRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F191E12BE4F9BA00F6297E /* SharingRootView.swift */; };
 		19F191E42BE686AE00F6297E /* BareMinimum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F191E32BE686AE00F6297E /* BareMinimum.swift */; };
-		19F855C12D6BFE04003BBDFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DA487F29CD2B8400EEA1E7 /* Assets.xcassets */; };
 		19F95FF329F10FBC00314DDC /* StatDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F95FF229F10FBC00314DDC /* StatDataFlow.swift */; };
 		19F95FF529F10FCF00314DDC /* StatProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F95FF429F10FCF00314DDC /* StatProvider.swift */; };
 		19F95FF729F10FEE00314DDC /* StatStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F95FF629F10FEE00314DDC /* StatStateModel.swift */; };
@@ -741,6 +741,7 @@
 		19B0EF2028F6D66200069496 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 		19C166682756EFBD00ED12E3 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		19C166692756EFBD00ED12E3 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		19CE0E582DD9F3060050FC89 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		19D466A229AA2B80004D5F33 /* FPUConfigDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPUConfigDataFlow.swift; sourceTree = "<group>"; };
 		19D466A429AA2BD4004D5F33 /* FPUConfigProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPUConfigProvider.swift; sourceTree = "<group>"; };
 		19D466A629AA2C22004D5F33 /* FPUConfigStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPUConfigStateModel.swift; sourceTree = "<group>"; };
@@ -1791,12 +1792,13 @@
 		3811DED425C9E1E300A708ED /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				388E597125AD9CF10019842D /* json */,
-				388E596E25AD96040019842D /* javascript */,
+				19DA487F29CD2B8400EEA1E7 /* Assets.xcassets */,
+				B9CAAEFB2AE70836000F68BC /* branch.txt */,
+				19CE0E582DD9F3060050FC89 /* Configuration.swift */,
 				3811DEC725C9DA7300A708ED /* FreeAPS.entitlements */,
 				388E596425AD948E0019842D /* Info.plist */,
-				B9CAAEFB2AE70836000F68BC /* branch.txt */,
-				19DA487F29CD2B8400EEA1E7 /* Assets.xcassets */,
+				388E596E25AD96040019842D /* javascript */,
+				388E597125AD9CF10019842D /* json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -2050,7 +2052,6 @@
 				19B0EF2028F6D66200069496 /* Statistics.swift */,
 				3871F38625ED661C0013ECB5 /* Suggestion.swift */,
 				38A0364125ED069400FCBB52 /* TempBasal.swift */,
-				19389E542D69393900636E49 /* TemporaryData.swift */,
 				3871F39B25ED892B0013ECB5 /* TempTarget.swift */,
 				3811DE8E25C9D80400A708ED /* User.swift */,
 				191A9D152BED00A500028D48 /* Version.swift */,
@@ -3162,6 +3163,7 @@
 				CEB434E328B8F9DB00B70274 /* BluetoothStateManager.swift in Sources */,
 				3811DE4225C9D4A100A708ED /* SettingsDataFlow.swift in Sources */,
 				1901412D2CDB92D600ABD925 /* RestoreDataFlow.swift in Sources */,
+				19CE0E592DD9F30D0050FC89 /* Configuration.swift in Sources */,
 				3811DE2525C9D48300A708ED /* MainRootView.swift in Sources */,
 				CE94598229E9E3D30047C9C6 /* WatchConfigProvider.swift in Sources */,
 				191A9D162BED00A500028D48 /* Version.swift in Sources */,
@@ -3799,7 +3801,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = $APP_BUILD_NUMBER;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
+				DEVELOPMENT_TEAM = 95SJ44D4HZ;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3854,7 +3856,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = $APP_BUILD_NUMBER;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
+				DEVELOPMENT_TEAM = 95SJ44D4HZ;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3909,7 +3911,7 @@
 				CODE_SIGN_ENTITLEMENTS = FreeAPSWatch/FreeAPSWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = $APP_BUILD_NUMBER;
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
+				DEVELOPMENT_TEAM = 95SJ44D4HZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = FreeAPSWatch_WatchKit_Extension;
 				INFOPLIST_FILE = FreeAPSWatch/Info.plist;
@@ -3943,7 +3945,7 @@
 				CODE_SIGN_ENTITLEMENTS = FreeAPSWatch/FreeAPSWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = $APP_BUILD_NUMBER;
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
+				DEVELOPMENT_TEAM = 95SJ44D4HZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = FreeAPSWatch_WatchKit_Extension;
 				INFOPLIST_FILE = FreeAPSWatch/Info.plist;
@@ -3973,7 +3975,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = $APP_BUILD_NUMBER;
 				DEVELOPMENT_ASSET_PATHS = "\"FreeAPSWatch WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = "${DEVELOPER_TEAM}";
+				DEVELOPMENT_TEAM = 95SJ44D4HZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FreeAPSWatch WatchKit Extension/Info.plist";
@@ -4013,7 +4015,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = $APP_BUILD_NUMBER;
 				DEVELOPMENT_ASSET_PATHS = "\"FreeAPSWatch WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = "${DEVELOPER_TEAM}";
+				DEVELOPMENT_TEAM = 95SJ44D4HZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FreeAPSWatch WatchKit Extension/Info.plist";
@@ -4047,7 +4049,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
+				DEVELOPMENT_TEAM = 95SJ44D4HZ;
 				INFOPLIST_FILE = FreeAPSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -4068,7 +4070,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
+				DEVELOPMENT_TEAM = 95SJ44D4HZ;
 				INFOPLIST_FILE = FreeAPSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -4093,7 +4095,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
+				DEVELOPMENT_TEAM = 95SJ44D4HZ;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -4127,7 +4129,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "$(DEVELOPER_TEAM)";
+				DEVELOPMENT_TEAM = 95SJ44D4HZ;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
